@@ -1,3 +1,2 @@
 # ailequal.github.io
-
-this is a github page test
+A WIP GitHub Pages.
