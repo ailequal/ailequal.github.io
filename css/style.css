@@ -1,3 +1,25 @@
+/* font */
+@font-face{
+  font-family: 'Roboto';
+  src: url('../font/roboto-400-n.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('../font/roboto-400-i.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: 'Roboto';
+  src: url('../font/roboto-400-n.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
+
 /* general */
 * {
   box-sizing: border-box;
@@ -6,13 +28,91 @@
 }
 
 body {
-  
+  max-width: 1200px;
+  min-width: 300px;
+  margin: 20px auto 0 auto;
+  background-color: rgb(28, 28, 28);
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.mar_bot_20 {
+  margin-bottom: 20px;
+}
+
+.mar_bot_30 {
+  margin-bottom: 30px;
+}
+
+.mar_bot_40 {
+  margin-bottom: 40px;
+}
+
 /* header */
-/* empty */
+.nav_bar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.nav_bar li {
+  margin-left: 20px;
+}
+
+.nav_bar .home {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.user_name {
+  color: rgb(0, 209, 76);
+}
+
+.at_sign {
+  color: rgb(0, 121, 250);
+}
+
+.domain {
+  color: rgb(57, 193, 246);
+}
+
+.tilde {
+  color: rgb(255, 208, 48);
+}
+
+.percentage {
+  color: rgb(255, 255, 255);
+}
+
+.vertical_bar {
+  opacity: 1;
+  color: rgb(0, 209, 76);
+  animation-name: blink;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes blink {
+  0% {
+    color: rgb(0, 209, 76);
+  }
+  50% {
+    color: transparent;
+  }
+}
 
 /* main */
-/* empty */
+
 
 /* footer */
 /* empty */
