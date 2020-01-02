@@ -177,11 +177,37 @@ a:active {
   flex-wrap: wrap;
 }
 
-.repos .row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+.repos .grid {
+  display: grid;
+}
+
+.repos .grid .item {
+  width: calc(1280px * 0.20);
+  opacity: 0.5;
+}
+
+.repos .grid .item:hover {
+  opacity: 1;
+}
+
+.repos .grid .item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.repos .grid .item a {
+  display: block;
+  text-align: center;
+}
+
+.repos .grid .item h4 {
+  text-align: center;
+  font-size: 14px;
+  color: rgb(255, 255, 255)
+}
+
+.repos .grid .item span {
+  color: rgb(0, 121, 250)
 }
 
 /* footer */
