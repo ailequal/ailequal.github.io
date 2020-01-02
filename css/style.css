@@ -30,17 +30,56 @@
 body {
   max-width: 1200px;
   min-width: 300px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto;
   background-color: rgb(28, 28, 28);
-  color: rgb(255, 255, 255);
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+header, main, footer {
+  margin: 0 20px;
+}
+
+h2 {
+  color: rgb(188, 80, 236);
+}
+
+h3 {
+  color: rgb(57, 193, 246);
+}
+
+h4 {
+  color: rgb(188, 80, 236);
 }
 
 a {
-  color: rgb(255, 255, 255);
+  color: rgb(255, 208, 48);
   text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.debug {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  text-align: center;
+  line-height: 200px;
+}
+
+.mar_top_10 {
+  margin-top: 10px;
+}
+
+.mar_bot_10 {
+  margin-bottom: 10px;
 }
 
 .mar_bot_20 {
@@ -53,6 +92,14 @@ a {
 
 .mar_bot_40 {
   margin-bottom: 40px;
+}
+
+.green {
+  color: rgb(0, 209, 76);
+}
+
+.yellow {
+  color: rgb(255, 208, 48);
 }
 
 /* header */
@@ -89,6 +136,10 @@ a {
   color: rgb(255, 208, 48);
 }
 
+.plus_minus {
+  color: rgb(0, 121, 250);
+}
+
 .percentage {
   color: rgb(255, 255, 255);
 }
@@ -112,7 +163,32 @@ a {
 }
 
 /* main */
+.love_hate {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
+.projects .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.repos .row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 /* footer */
-/* empty */
+.author {
+  text-align: right;
+}
+
+.author span {
+  color: rgb(0, 209, 76);
+}
