@@ -66,12 +66,16 @@ a:active {
   text-decoration: underline;
 }
 
-.debug {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  text-align: center;
-  line-height: 200px;
+.blue {
+  color: rgb(0, 121, 250);
+}
+
+.green {
+  color: rgb(0, 209, 76);
+}
+
+.yellow {
+  color: rgb(255, 208, 48);
 }
 
 .mar_top_10 {
@@ -94,12 +98,12 @@ a:active {
   margin-bottom: 40px;
 }
 
-.green {
-  color: rgb(0, 209, 76);
-}
-
-.yellow {
-  color: rgb(255, 208, 48);
+.debug {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  text-align: center;
+  line-height: 200px;
 }
 
 /* header */
@@ -178,11 +182,13 @@ a:active {
 }
 
 .repos .grid {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .repos .grid .item {
   width: calc(1280px * 0.20);
+  margin: 10px 10px 0 10px;
   opacity: 0.5;
 }
 
@@ -204,10 +210,6 @@ a:active {
   text-align: center;
   font-size: 14px;
   color: rgb(255, 255, 255)
-}
-
-.repos .grid .item span {
-  color: rgb(0, 121, 250)
 }
 
 /* footer */
