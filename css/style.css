@@ -130,31 +130,31 @@ a:active {
   margin-right: auto;
 }
 
-.user_name {
+.main_title .user_name {
   color: rgb(0, 209, 76);
 }
 
-.at_sign {
+.main_title .at_sign {
   color: rgb(0, 121, 250);
 }
 
-.domain {
+.main_title .domain {
   color: rgb(57, 193, 246);
 }
 
-.tilde {
+.main_title .tilde {
   color: rgb(255, 208, 48);
 }
 
-.plus_minus {
+.main_title .plus_minus {
   color: rgb(0, 121, 250);
 }
 
-.percentage {
+.main_title .percentage {
   color: rgb(255, 255, 255);
 }
 
-.vertical_bar {
+.main_title .vertical_bar {
   opacity: 1;
   color: rgb(0, 209, 76);
   animation-name: blink;
@@ -172,24 +172,23 @@ a:active {
   }
 }
 
-/* main */
-.love_hate {
+/* index.html - about.html*/
+.hello_world .love_hate,
+.about_me .love_hate {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.projects .row {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+/* index.html - projects.html */
+.projects .grid {
+  display: grid;
 }
 
+/* index.html - repos.html */
 .repos .grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
 }
 
 .repos .grid .item {
@@ -218,10 +217,10 @@ a:active {
   color: rgb(255, 255, 255)
 }
 
+/* about.html */
 .about_website .flexbox {
   display: flex;
   align-items: center;
-  /* flex-wrap: nowrap; */
 }
 
 @media screen and (max-width: 992px) {
@@ -230,15 +229,15 @@ a:active {
   }
 }
 
-.paragraph {
+.about_website .paragraph {
   flex-basis: 45%;
 }
 
-.neofetch {
+.about_website .neofetch {
   flex-basis: 55%;
 }
 
-.neofetch img {
+.about_website .neofetch img {
   display: block;
   max-width: 842px;
   width: 100%;
