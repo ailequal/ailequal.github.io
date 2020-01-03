@@ -66,6 +66,12 @@ a:active {
   text-decoration: underline;
 }
 
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
 .blue {
   color: rgb(0, 121, 250);
 }
@@ -212,6 +218,33 @@ a:active {
   color: rgb(255, 255, 255)
 }
 
+.about_website .flexbox {
+  display: flex;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+}
+
+@media screen and (max-width: 992px) {
+  .about_website .flexbox {
+    display: block;
+  }
+}
+
+.paragraph {
+  flex-basis: 45%;
+}
+
+.neofetch {
+  flex-basis: 55%;
+}
+
+.neofetch img {
+  display: block;
+  max-width: 842px;
+  width: 100%;
+  margin: auto;
+}
+
 /* footer */
 .author {
   text-align: right;
@@ -219,4 +252,8 @@ a:active {
 
 .author span {
   color: rgb(0, 209, 76);
+}
+
+#bridge span:nth-child(2n + 1){
+	display: none;
 }

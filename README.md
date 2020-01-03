@@ -1,2 +1,2 @@
 # ailequal.github.io
-A WIP GitHub Pages.
+ailequal's GitHub Pages.
