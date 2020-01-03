@@ -182,35 +182,74 @@ a:active {
 }
 
 /* index.html - projects.html */
-.projects .grid {
+/* .projects .grid {
   display: grid;
-}
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 10px;
+} */
 
-/* index.html - repos.html */
+/* index.html - projects.html - repos.html */
+.projects .grid,
 .repos .grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 10px;
 }
 
+@media screen and (max-width: 992px) {
+  .projects .grid,
+  .repos .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projects .grid,
+  .repos .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .projects .grid,
+  .repos .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.projects .grid .item,
 .repos .grid .item {
+  justify-self: center;
   width: calc(1280px * 0.20);
   margin: 10px 10px 0 10px;
   opacity: 0.5;
 }
 
+@media screen and (max-width: 1200px) {
+  .projects .grid .item,
+  .repos .grid .item {
+    width: calc(1280px * 0.17);
+  }
+}
+
+.projects .grid .item:hover,
 .repos .grid .item:hover {
   opacity: 1;
 }
 
+.projects .grid .item img,
 .repos .grid .item img {
   width: 100%;
   border-radius: 5px;
 }
 
+.projects .grid .item a,
 .repos .grid .item a {
   display: block;
   text-align: center;
 }
 
+.projects .grid .item h4,
 .repos .grid .item h4 {
   text-align: center;
   font-size: 14px;
