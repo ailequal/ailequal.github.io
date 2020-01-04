@@ -172,21 +172,33 @@ a:active {
   }
 }
 
+/* index.html */
+.hello_world .about_me .ailequal {
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .hello_world .about_me .ailequal {
+    margin: 0;
+  }
+}
+
+.hello_world .about_me .ailequal img {
+  display: block;
+  max-width: 100px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
+}
+
 /* index.html - about.html*/
 .hello_world .love_hate,
-.about_me .love_hate {
+.about .love_hate {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
-
-/* index.html - projects.html */
-/* .projects .grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 10px;
-} */
 
 /* index.html - projects.html - repos.html */
 .projects .grid,
@@ -257,9 +269,42 @@ a:active {
 }
 
 /* about.html */
+.about_me .flexbox,
 .about_website .flexbox {
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .about_me .flexbox {
+    display: block;
+  }
+}
+
+.about_me .ailequal {
+  flex-basis: 20%;
+}
+
+.about_me .paragraph {
+  flex-basis: 80%;
+}
+
+.about .about_me .ailequal {
+  margin: 0 10px 0 0;
+}
+
+@media screen and (max-width: 768px) {
+  .about .about_me .ailequal {
+    margin: 0;
+  }
+}
+
+.about .about_me .ailequal img {
+  display: block;
+  max-width: 150px;
+  width: 100%;
+  margin: auto;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 992px) {
