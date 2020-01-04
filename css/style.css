@@ -200,6 +200,11 @@ a:active {
   flex-wrap: wrap;
 }
 
+.hello_world .love_hate div,
+.about .love_hate div {
+  margin: 10px;
+}
+
 /* index.html - projects.html - repos.html */
 .projects .grid,
 .repos .grid {
